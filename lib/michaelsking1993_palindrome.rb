@@ -1,6 +1,6 @@
 require "michaelsking1993_palindrome/version"
 
-class String
+module Michaelsking1993Palindrome
 
 # Returns true for a palindrome, false otherwise.
 def palindrome?
@@ -19,3 +19,13 @@ def processed_content
   self.letters.downcase
 end
 end
+
+class String
+  include Michaelsking1993Palindrome
+end
+
+class Integer
+  include Michaelsking1993Palindrome
+end
+
+
